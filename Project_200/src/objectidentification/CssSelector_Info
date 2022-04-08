@@ -89,7 +89,7 @@ Css_Attribute:-->
 		Instead of target elements with id and name property. We can
 	target location with other attributes using Attribute syntax.
 
-	Note:--> Make sure duplication fo other properties before using it.
+	Note:--> Make sure duplication for other properties before using it.
 
 	Htmlsource:-->
 	<div  id="Sbtn"   aria-lable="Login"  type="submit"></div>
@@ -137,7 +137,7 @@ Identify 3rd element:--->
 		
 			By.id("x")  ---> 2nd object
 			By.cssSelector("div[id='x'][type='C']")  --> 3rd object
-			
+			By.cssSelector("div#x[type='C']")		 --> 3rd object
 =========================================================================
 Css_Attribute with class property:-->
 		
@@ -259,3 +259,31 @@ Htmsource:--> Identify Required object using Position
 		
 		
 ================================================================================
+Default CssSelector:-->
+
+	#id
+	.classname
+	[tagname#id.classname]
+
+Css Attribute:-->
+
+	tagname[Pname='Pvalue']
+	tagname[Pname='Pvalue'][Pname='Pvalue']
+
+Css partial:-->
+	
+	tagname[pname*='Partial Matching characters']
+	tagname[pname^='Partial start characters']
+	tagname[pname$='Partial End characters']
+
+Css Axis specifiers:-->
+
+	 parent > child
+	 parent (space) desendant
+	 Sibling + Sibling
+
+Css Position:-->
+
+	tagname:nth-child(int pos)
+	tagname:nth-of-type(int pos)
+	tagname:nth-last-child(int pos)
