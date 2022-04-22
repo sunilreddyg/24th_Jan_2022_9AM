@@ -12,6 +12,9 @@ public class Variable_Static
 		System.out.println(Variable_Static.x);
 		System.out.println(Variable_Static.y);
 		System.out.println(Variable_Static.name);
+		
+		String InstName=Variable_Static.name;
+		System.out.println(InstName);
 
 	}
 
