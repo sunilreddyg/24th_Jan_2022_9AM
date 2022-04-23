@@ -1,6 +1,7 @@
 package mq.java.conditional_Statements;
 
-public class IF_Else_StateMent {
+public class IF_Else_StateMent 
+{
 
 	public static void main(String[] args)
 	{
