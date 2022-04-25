@@ -38,12 +38,12 @@ public class Verify_Dropdown_Option_Availability {
 		String Cities=CityDropdown.getText();
 		System.out.println(Cities);
 		
-		/*if(Cities.contains("Baroda"))
+		if(Cities.contains("Baroda"))
 			System.out.println("Testpass, Expected city available at dropdown");
 		else
 			System.out.println("Testfail, Expected City Not available at dropdown");
 		
-		*/
+		
 		
 		
 
