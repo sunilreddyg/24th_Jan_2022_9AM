@@ -32,7 +32,10 @@ public class Mouse_Actions
 		robot.mousePress(InputEvent.BUTTON1_MASK);
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
 		
-
+		//To perfor window scroll down and scroll up
+		robot.mouseWheel(300);
+		Thread.sleep(400);
+		robot.mouseWheel(-300);
 	}
 
 }
