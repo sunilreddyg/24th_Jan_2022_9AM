@@ -1,0 +1,70 @@
+
+public class A
+{
+	
+	public A(Webdriver driver)
+	{
+		PageFactory.initElements(driver,this);
+	}
+
+	@FindBy(id="email") public WebElement UID;
+
+}
+
+
+public class B
+{
+	
+	public B(Webdriver driver)
+	{
+		PageFactory.initElements(driver,this);
+	}
+
+	@FindBy(id="pass") public WebElement PWD;
+
+}
+
+
+public class Testcases
+{
+
+	WebDriver driver;
+	public Testcases(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+
+	public void logindetails()
+	{	
+		
+		A obj1=new A(driver);
+		obj1.UID.Sendkeys("Rakesh");
+
+		B obj2=new B(driver);
+		obj2.PWD.Sendkeys("Hello");
+	}
+
+}
+
+
+
+public void RunTestcases
+{	
+	Webdriver driver;
+
+	@BeforeClass
+	public void setupbrowser()
+	{
+		driver=new Chromedriver();
+		driver.get("http://siteurl.com")
+	}
+
+	@Test
+	publci void verify_login()
+	{
+		Testcases obj3=new Testcases(driver);
+		obj3.logindetails();
+
+	}
+
+}

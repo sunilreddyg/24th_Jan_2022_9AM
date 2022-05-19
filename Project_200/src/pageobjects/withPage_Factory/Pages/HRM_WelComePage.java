@@ -7,5 +7,5 @@ public class HRM_WelComePage
 {
 	
 	@FindBy(xpath = "//a[@id='welcome']") public WebElement welcomeObj;
-
+	@FindBy(xpath = "//input[@id='MP_link']") public WebElement MarketPlaces;
 }
