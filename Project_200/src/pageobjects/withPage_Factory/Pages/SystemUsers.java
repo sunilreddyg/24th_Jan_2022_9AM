@@ -8,9 +8,11 @@ import org.openqa.selenium.WebElement;
 
 public class SystemUsers
 {
+	WebDriver driver;
 	public SystemUsers(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);
+		this.driver=driver;
 	}
 
 	@FindBy(xpath = "//input[contains(@id,'userName')]")

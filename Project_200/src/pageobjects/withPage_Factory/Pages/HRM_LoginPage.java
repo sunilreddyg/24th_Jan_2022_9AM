@@ -1,10 +1,20 @@
 package pageobjects.withPage_Factory.Pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HRM_LoginPage 
 {
+	WebDriver driver;
+	public HRM_LoginPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+		this.driver=driver;
+	}
+	
+	
 	//Input Data
 	public String pageurl="https://opensource-demo.orangehrmlive.com/";
 	public String error_message="Invalid credentials";

@@ -8,10 +8,11 @@ import org.openqa.selenium.WebElement;
 
 public class MenuTabs
 {
-	
+	WebDriver driver;
 	public MenuTabs(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);
+		this.driver=driver;
 	}
 
 	@FindBy(xpath = "//b[contains(.,'Admin')]")

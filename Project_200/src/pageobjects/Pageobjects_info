@@ -33,7 +33,7 @@ Page Objects:--->
 	Difference between pageObjects and PageFactory:-->
 
 		PageObjects:-->
-				=> We have import Whenever Object is reused outside package
+				=> We have to import Whenever Object is reused outside package
 				=> We use By class to Identify object
 
 		PageFactory:-->
